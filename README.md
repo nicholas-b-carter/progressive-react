@@ -102,3 +102,4 @@ Stoiber. For more information see `LICENSE.md`.
 This project is a labor of love. I ([Max](https://twitter.com/mxstbr)) have
 spent a lot of time building and maintaining react-boilerplate, and if you're
 using it I'd be immensely grateful for [a donation](https://cash.me/$mxstbr).
+# progressive-react
