@@ -15,4 +15,7 @@ const createSelectLocationState = () => {
   };
 };
 
-export default createSelectLocationState;
+const selectLocationSelector = createSelectLocationState();
+
+export default selectLocationSelector;
+
