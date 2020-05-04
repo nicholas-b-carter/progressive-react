@@ -37,7 +37,9 @@
     "test:firefox": "npm run test -- --browsers Firefox",
     "test:safari": "npm run test -- --browsers Safari",
     "test:ie": "npm run test -- --browsers IE",
-    "coveralls": "cat ./coverage/lcov/lcov.info | coveralls"
+    "coveralls": "cat ./coverage/lcov/lcov.info | coveralls",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "pre-commit": "lint:staged",
   "babel": {
@@ -69,14 +71,26 @@
     },
     "rules": {
       "import/no-unresolved": 2,
-      "comma-dangle": [2, "always-multiline"],
-      "indent": [2, 2, { "SwitchCase": 1 }],
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ],
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
       "no-console": 1,
       "max-len": 0,
       "prefer-template": 2,
       "no-use-before-define": 0,
       "newline-per-chained-call": 0,
-      "arrow-body-style": [2, "as-needed"],
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
       "jsx-a11y/href-no-hash": 2,
       "jsx-a11y/label-has-for": 2,
       "jsx-a11y/mouse-events-have-key-events": 2,
@@ -136,7 +150,8 @@
     "reselect": "^2.5.1",
     "sanitize.css": "^3.3.0",
     "scroll-behavior": "^0.4.0",
-    "whatwg-fetch": "^0.11.0"
+    "whatwg-fetch": "^0.11.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.7",
@@ -206,5 +221,6 @@
     "webpack": "^2.1.0-beta.6",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
-  }
+  },
+  "snyk": true
 }
